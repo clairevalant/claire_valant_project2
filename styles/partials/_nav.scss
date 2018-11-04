@@ -12,7 +12,7 @@
 
     &__item {
         @extend .nav;
-        margin: 0 30px;
+        margin: 0 3rem;
 
         &--margin-right{
             margin-right: 20%;
@@ -26,9 +26,9 @@
     &__link {
         @extend .nav;
         text-decoration: none;
-        padding: 12px;
-        font-size: 20px;
-        line-height: 29px;
+        padding: 1.2rem;
+        font-size: 2rem;
+        line-height: 2.9rem;
 
         &--current-page {
             color: $light-color;
@@ -48,11 +48,12 @@
     left: 0;
     height: 75px;
     width: 100%;
+    z-index: 100;
 
     &__logo-link {
-        font-size: 40px;
+        font-size: 4rem;
         position: absolute;
-        top:16px;
+        top:1.6rem;
         left: auto;
         right: auto;
     }

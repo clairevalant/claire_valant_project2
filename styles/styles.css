@@ -132,10 +132,13 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+html {
+  font-size: 62.5%; }
+
 body {
   font-family: "Cabin", sans-serif;
-  font-size: 20px;
-  line-height: 32px; }
+  font-size: 2rem;
+  line-height: 3.2rem; }
 
 a {
   text-decoration: none;
@@ -149,23 +152,58 @@ img {
 
 .nav-contain,
 .header,
-.button,
+.header__title-box__title,
+.mini-header__title .button,
 .section__h2,
 .section__h3,
 .section__h4 {
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
-  font-weight: 700; }
+  font-weight: 700;
+  padding: 0;
+  margin: 0; }
 
 .button {
   background: #f38d8d;
   border: none; }
 
-.header__title {
-  font-family: "Oswald", sans-serif;
-  font-size: 120px;
-  color: #171717;
-  text-transform: uppercase; }
+.header {
+  height: calc(100vh - 75px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .header__title-box {
+    position: relative;
+    width: 38%;
+    line-height: 12rem;
+    margin: 0 0 0 6.8vw; }
+    .header__title-box__title {
+      font-family: "Oswald", sans-serif;
+      font-size: 12rem;
+      color: #171717;
+      text-transform: uppercase; }
+    .header__title-box__decoration {
+      position: absolute;
+      width: 30%;
+      top: -5.6rem;
+      right: 8.3rem; }
+  .header__image {
+    width: 31.25vw;
+    max-width: 500px;
+    -webkit-box-shadow: 20px 20px white;
+    box-shadow: 20px 20px white;
+    position: relative;
+    top: 8.7vh; }
 
 .nav, .nav__list, .nav__item, .nav__link {
   padding: 0;
@@ -186,16 +224,16 @@ img {
     -ms-flex-align: center;
     align-items: center; }
   .nav__item {
-    margin: 0 30px; }
+    margin: 0 3rem; }
     .nav__item--margin-right {
       margin-right: 20%; }
     .nav__item--margin-left {
       margin-left: 20%; }
   .nav__link {
     text-decoration: none;
-    padding: 12px;
-    font-size: 20px;
-    line-height: 29px; }
+    padding: 1.2rem;
+    font-size: 2rem;
+    line-height: 2.9rem; }
     .nav__link--current-page {
       color: #f6f6f6; }
     .nav__link:hover {
@@ -221,10 +259,14 @@ img {
   top: 0;
   left: 0;
   height: 75px;
-  width: 100%; }
+  width: 100%;
+  z-index: 100; }
   .nav-contain__logo-link {
-    font-size: 40px;
+    font-size: 4rem;
     position: absolute;
-    top: 16px;
+    top: 1.6rem;
     left: auto;
     right: auto; }
+
+.section--who {
+  background: #f6f6f6; }

@@ -1,8 +1,36 @@
     // Harper Header styles
 
-.header__title {
-font-family: $title-font;
-font-size: 120px;
-color: $dark-color;
-text-transform: uppercase;
-} 
+.header {
+    height: calc(100vh - 75px);
+    @include flexBox();
+
+    &__title-box {
+        position: relative;
+        width: 38%;
+        line-height: 12rem;
+        margin: 0 0 0 6.8vw;
+
+        &__title {
+            font-family: $title-font;
+            font-size: 12rem;
+            color: $dark-color;
+            text-transform: uppercase;
+        }  
+
+        &__decoration {
+            position: absolute;
+            width: 30%;
+            top:-5.6rem;
+            right: 8.3rem;
+        }
+    }
+
+    &__image {
+        width: 31.25vw;
+        max-width: 500px;
+        box-shadow: 20px 20px white;
+        position: relative;
+        top:8.7vh;
+    }
+}
+
