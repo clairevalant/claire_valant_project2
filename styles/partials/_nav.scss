@@ -1,0 +1,28 @@
+// Nav styles
+
+.nav {
+    padding: 0;
+    margin: 0;
+    &__list {
+        @extend .nav;
+    }
+
+    &__item {
+        @extend .nav;
+    }
+    
+    &__link {
+        @extend .nav;
+        text-decoration: none;
+        color: inherit;
+
+    }
+}
+
+.nav {
+    @include flexBox();
+    position: sticky;
+    top:0;
+    left: 0;
+    width: 100%;
+}
