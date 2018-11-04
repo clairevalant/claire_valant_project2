@@ -184,8 +184,9 @@ img {
   align-items: center; }
   .header__title-box {
     position: relative;
-    width: 38%;
+    width: 45.3rem;
     line-height: 12rem;
+    height: 28.7vh;
     margin: 0 0 0 6.8vw; }
     .header__title-box__title {
       font-family: "Oswald", sans-serif;
@@ -193,10 +194,10 @@ img {
       color: #171717;
       text-transform: uppercase; }
     .header__title-box__decoration {
+      width: 15rem;
       position: absolute;
-      width: 30%;
-      top: -5.6rem;
-      right: 8.3rem; }
+      top: -5rem;
+      right: 0; }
   .header__image {
     width: 31.25vw;
     max-width: 500px;
