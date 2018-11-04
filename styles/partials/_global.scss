@@ -9,12 +9,40 @@ $light-color: #f6f6f6;
 $title-font: 'Oswald', sans-serif;
 $body-font: 'Cabin', sans-serif;
 
+// Global styles
+
 body {
     font-family: $body-font;
     font-size: 20px;
     line-height: 32px;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+.header, .nav-contain {
+    background: $main-color;
+}
 
 
+.nav-contain,
+.header,
+.button,
+.section__h2,
+.section__h3,
+.section__h4 {
+    text-transform: uppercase;
+    font-family: $title-font;
+    font-weight: 700;
+}
 
+.button {
+    background: $accent-color;
+    border: none;
+}

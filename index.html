@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Cabin:700|Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Oswald:700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
         crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css">
@@ -12,16 +12,18 @@
 </head>
 
 <body>
-    <!-- This nav will stay outside of the Home header because it is present on every page & sticky -->
-    <nav class="nav">
-        <span class="nav__logo">Harper</span>
-        <ul class="nav__list">
-            <li class="nav__item"><a class="nav__link nav__link--highlight" href="#index.html">Home</a></li>
-            <li class="nav__item"><a class="nav__link" href="index.html#about">About</a></li>
-            <li class="nav__item"><a class="nav__link" href="blog.html">Blog</a></li>
-            <li class="nav__item"><a class="nav__link" href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <!-- This nav will stay outside of the Home header because it is present on every page & sticky, and in a container with which to use flexbox-->
+    <div class="nav-contain">
+        <a class="nav-contain__logo-link" href="index.html">Harper</a>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link nav__link--current-page" href="index.html">Home</a></li>
+                <li class="nav__item nav__item--margin-right"><a class="nav__link" href="index.html#about">About</a></li>
+                <li class="nav__item nav__item--margin-left"><a class="nav__link" href="blog.html">Blog</a></li>
+                <li class="nav__item"><a class="nav__link" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>    
 
     <header class="header">
         <img class="header__image" src="assets/home-image-1.jpg" alt="A woman lying down surrounded by pink and blue balloons">
@@ -89,7 +91,7 @@
 
                 <p class="section__blog-summary section__blog-summary--right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error autem repellat delectus at voluptatibus, quasi impedit inventore debitis laborum in, cum iste minima adipisci! Earum adipisci deleniti sed eum corporis.</p>
 
-                <button>Read more</button>
+                <button class="button">Read more</button>
             </div>
         </section>
 
@@ -99,7 +101,7 @@
             </div>
 
             <div class="section__wrapper">
-                <h2>Harper's Journey</h2>
+                <h2 class="section__h2">Harper's Journey</h2>
 
                 <p class="section__para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas quaerat possimus mollitia
                     maiores quasi ab, iusto sed cum praesentium corporis placeat minima consequuntur, impedit qui neque quae adipisci
