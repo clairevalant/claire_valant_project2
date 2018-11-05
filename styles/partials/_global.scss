@@ -36,7 +36,7 @@ img {
 
 .nav-contain,
 .header,
-.header__title-box__title,
+.header__wrapper__title,
 .mini-header__title,
 .button__link,
 .section__h2,
@@ -54,4 +54,12 @@ img {
     background: $accent-color;
     border: none;
     padding: 10px 30px;
+}
+
+.section {
+    @include flexBox();
+
+    &__wrapper {
+        width: 90vw;
+    }
 }

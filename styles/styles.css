@@ -152,7 +152,7 @@ img {
 
 .nav-contain,
 .header,
-.header__title-box__title,
+.header__wrapper__title,
 .mini-header__title,
 .button__link,
 .section__h2,
@@ -170,6 +170,23 @@ img {
   border: none;
   padding: 10px 30px; }
 
+.section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .section__wrapper {
+    width: 90vw; }
+
 .header {
   height: calc(100vh - 75px);
   display: -webkit-box;
@@ -186,28 +203,24 @@ img {
   -ms-flex-align: center;
   align-items: center; }
   .header__wrapper {
-    width: 70vw;
+    width: 80vw;
     position: relative; }
-  .header__title-box {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    position: relative;
-    width: 453px;
-    line-height: 12rem;
-    height: 210px;
-    margin: 0 0 0 6.8vw;
-    z-index: 5; }
-    .header__title-box__title {
-      font-family: "Oswald", sans-serif;
-      font-size: 12rem;
-      color: #171717;
-      text-transform: uppercase; }
-    .header__title-box__decoration {
+    .header__wrapper__decoration {
       width: 15rem;
       position: absolute;
-      top: -5rem;
-      right: 0; }
+      top: 32%;
+      right: 90px;
+      z-index: 5; }
+    .header__wrapper__title {
+      position: absolute;
+      top: 40%;
+      right: 130px;
+      z-index: 5;
+      font-family: "Oswald", sans-serif;
+      font-size: 12rem;
+      line-height: 12rem;
+      color: #171717;
+      text-transform: uppercase; }
   .header__image {
     width: 450px;
     min-width: 450px;
@@ -280,7 +293,7 @@ img {
     left: auto;
     right: auto; }
 
-.section-who {
+.section--who {
   background: #f6f6f6;
   height: 55vh;
   display: -webkit-box;
@@ -296,8 +309,8 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
-  .section-who__wrapper {
-    width: 70vw;
+  .section--who__wrapper {
+    width: 90vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -311,7 +324,7 @@ img {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
-    .section-who__wrapper--inner {
+    .section--who__wrapper--inner {
       width: 50%;
       display: -webkit-box;
       display: -ms-flexbox;

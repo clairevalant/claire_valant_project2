@@ -5,41 +5,31 @@
     @include flexBox();
 
     &__wrapper {
-        width: 70vw;
+        width: 80vw;
         position: relative;
-        // @include flexBox(row, space-between, center);
-    }
-
-    &__title-box {
-        position: absolute;
-        top:50%;
-        right:0;
-        position: relative;
-        width: 453px;
-        line-height: 12rem;
-        height: 210px;
-        margin: 0 0 0 6.8vw;
-        z-index: 5;
-        
-
-        &__title {
-            font-family: $title-font;
-            font-size: 12rem;
-            color: $dark-color;
-            text-transform: uppercase;
-        }  
 
         &__decoration {
             width: 15rem;
             position: absolute;
-            top:-5rem;
-            right:0;
+            top:32%;
+            right:90px;
+            z-index: 5;
         }
+        
+        &__title {
+            position: absolute;
+            top:40%;
+            right:130px;
+            z-index: 5;
+            font-family: $title-font;
+            font-size: 12rem;
+            line-height: 12rem;
+            color: $dark-color;
+            text-transform: uppercase;
+        }  
     }
 
     &__image {
-        // width: 31.25vw;
-        // max-width: 500px;
         width:450px;
         min-width: 450px;
         box-shadow: 20px 20px white;

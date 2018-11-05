@@ -1,12 +1,12 @@
 // Who's Harper? Section styles
 
-.section-who {
+.section--who {
     background: $light-color;
     height: 55vh;
     @include flexBox();
 
     &__wrapper {
-        width: 70vw;
+        width: 90vw;
         @include flexBox(row, flex-end, center);
 
         &--inner {
