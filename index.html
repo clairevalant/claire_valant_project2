@@ -26,21 +26,29 @@
     </div>    
 
     <header class="header">
-         <img class="header__image" src="assets/home-image-1.jpg" alt="A woman lying down surrounded by pink and blue balloons">
+        <div class="header__wrapper">
+            <img class="header__image" src="assets/home-image-1.jpg" alt="A woman lying down surrounded by pink and blue balloons">
 
-        <div class="header__title-box">
-            <img class="header__title-box__decoration" src="assets/circle-text.png" alt="Everyday life with">
-            <h1 class="header__title-box__title">Harper</h1>
+            <div class="header__title-box">
+                <img class="header__title-box__decoration" src="assets/circle-text.png" alt="Everyday life with">
+                <h1 class="header__title-box__title">Harper</h1>
+            </div>
         </div>
     </header>
 
     <main>
-        <section class="section section--who">
-            <div class="section__wrapper">
-                <h2 class="section__h2">Who's Harper?</h2>
-                <p class="section__para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse voluptatem molestias corporis! Aspernatur, impedit alias ducimus adipisci tenetur delectus fugiat! Illo nam obcaecati saepe culpa beatae fugit quasi numquam temporibus?</p>
+        <section class="section-who">
+            <div class="section-who__wrapper">
+                <div class="section-who__wrapper--inner">
+                    <h2 class="section__h2">Who's Harper?</h2>
+
+                    <p class="section__para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse voluptatem molestias
+                    corporis! Aspernatur, impedit alias ducimus adipisci tenetur delectus fugiat! Illo nam obcaecati saepe culpa
+                    beatae fugit quasi numquam temporibus?</p>
+                    
+                    <button class="button"><a href="#" class="button__link">Find out more</a></button>
+                </div>
             </div>
-            <button class="button">Find out more</button>
         </section>
 
         <div class="mini-header">
@@ -89,7 +97,7 @@
                 <p class="section__blog-summary section__blog-summary--top">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error autem repellat delectus at voluptatibus, quasi impedit inventore debitis laborum in, cum iste minima adipisci! Earum adipisci deleniti sed eum corporis.</p>
 
                 <!-- Linking this button to the more recent blog post on the Blog page -->
-                <button class="button"><a class="section__link" href="blog.html#recent-post">Read more</a></button>
+                <button class="button"><a class="button__link" href="blog.html#recent-post">Read more</a></button>
             </div>
 
             <div class="section__img-background section__img-background--right"><img src="assets/home-image-4.jpg" alt="An industrial building with many vents photographed from the side at sunset" class="section__img section__img--right"></div>
@@ -99,7 +107,7 @@
 
                 <p class="section__blog-summary section__blog-summary--right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error autem repellat delectus at voluptatibus, quasi impedit inventore debitis laborum in, cum iste minima adipisci! Earum adipisci deleniti sed eum corporis.</p>
 
-                <button class="button">Read more</button>
+                <button class="button"><a href="blog.html" class="button__link" >Read more</a></button>
             </div>
         </section>
 
@@ -118,7 +126,7 @@
                     cum quaerat! Nulla.</p>
             </div>
 
-            <button>Find out more</button>
+            <button><a href="blog.html" class="button__link" >Find out more</a> </button>
         </div>
 
         <div class="section section--gallery">

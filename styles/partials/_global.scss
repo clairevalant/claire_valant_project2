@@ -34,18 +34,18 @@ img {
     background: $main-color;
 }
 
-
 .nav-contain,
 .header,
 .header__title-box__title,
-.mini-header__title
-.button,
+.mini-header__title,
+.button__link,
 .section__h2,
 .section__h3,
 .section__h4 {
     text-transform: uppercase;
     font-family: $title-font;
     font-weight: 700;
+    letter-spacing: 1px;
     padding: 0;
     margin: 0;
 }
@@ -53,4 +53,5 @@ img {
 .button {
     background: $accent-color;
     border: none;
+    padding: 10px 30px;
 }

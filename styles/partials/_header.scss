@@ -4,13 +4,22 @@
     height: calc(100vh - 75px);
     @include flexBox();
 
-    &__title-box {
+    &__wrapper {
+        width: 70vw;
         position: relative;
-        // @include flexBox(column, space-between, flex-end);
-        width: 45.3rem;
+        // @include flexBox(row, space-between, center);
+    }
+
+    &__title-box {
+        position: absolute;
+        top:50%;
+        right:0;
+        position: relative;
+        width: 453px;
         line-height: 12rem;
-        height: 28.7vh;
+        height: 210px;
         margin: 0 0 0 6.8vw;
+        z-index: 5;
         
 
         &__title {
@@ -29,11 +38,14 @@
     }
 
     &__image {
-        width: 31.25vw;
-        max-width: 500px;
+        // width: 31.25vw;
+        // max-width: 500px;
+        width:450px;
+        min-width: 450px;
         box-shadow: 20px 20px white;
         position: relative;
         top:8.7vh;
+        z-index: 1;
     }
 }
 
