@@ -1,2 +1,34 @@
 // Site map styles
 
+.site-map-section{
+    background: $light-color;
+    min-height: 75vh;
+    @include flexBox();
+
+     // The circle icon background
+    &__icon-background {
+        background: $main-color;
+        height:45px;
+        width:45px;
+        border-radius: 50%;
+        margin-right: 20px;
+        @include flexBox();
+    }
+
+    &__para {
+        margin-left: 65px;
+    }
+
+    &__wrapper {
+        width:90vw;
+        @include flexBox();
+        flex-wrap: wrap;
+    }
+
+    &__quarter {
+        width: 45%;
+        min-width: 450px;
+        @include flexBox(row, flex-start, center);
+        flex-wrap: wrap;
+    }
+}

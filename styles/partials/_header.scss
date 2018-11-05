@@ -9,21 +9,21 @@
         position: relative;
 
         &__decoration {
-            width: 15rem;
+            width: 17rem;
             position: absolute;
             top:32%;
-            right:90px;
+            right:35px;
             z-index: 5;
         }
         
         &__title {
             position: absolute;
             top:40%;
-            right:130px;
+            right:75px;
             z-index: 5;
             font-family: $title-font;
-            font-size: 12rem;
-            line-height: 12rem;
+            font-size: 15rem;
+            line-height: 15rem;
             color: $dark-color;
             text-transform: uppercase;
         }  
