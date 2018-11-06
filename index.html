@@ -36,7 +36,7 @@
 
     <main>
         <section class="section who-section" id="about">
-            <div class="who-section__wrapper">
+            <div class="who-section__wrapper section__wrapper">
                 <div class="who-section__wrapper--inner">
                     <h2 class="who-section__h2 section__h2">Who's Harper?</h2>
 
@@ -54,7 +54,7 @@
         </div>
 
         <section class="section site-map-section">
-            <div class="site-map-section__wrapper">
+            <div class="site-map-section__wrapper section__wrapper">
                 <div class="site-map-section__quarter">
                     <div class="site-map-section__icon-background"><i class="site-map-section__icon fas fa-image"></i></div>
 
@@ -93,49 +93,51 @@
         </section>
 
         <section class="section blog-preview-section">
-            <div class="blog-preview-section__img-background blog-preview-section__img-background--top">
-                <!-- Using img-background as a parent div to absolutely position the image on top -->
+            <div class="section__wrapper">
+                
                 <img src="assets/home-image-3.jpg" alt="Two people surfing, silouhetted against a pink sunset" class="blog-preview-section__img blog-preview-section__img--top">
-            </div>
 
-            <!-- Wrapper for blog preview heading & paragraph -->
-            <div class="blog-preview-section__quarter blog-preview-section__quarter--top">
-                <h3 class="blog-preview-section__h3">Harper's Travels</h3>
+                <!-- Wrapper for blog preview heading & paragraph -->
+                <div class="blog-preview-section__quarter blog-preview-section__quarter--top">
+                        <h3 class="blog-preview-section__h3 section__h3">Harper's Travels</h3>
+                        
+                        <p class="blog-preview-section__summary blog-preview-section__summary--top">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Error autem repellat delectus at voluptatibus, quasi impedit inventore debitis laborum in, cum
+                            iste minima adipisci! Earum adipisci deleniti sed eum corporis.</p>
+                        
+                        <!-- Linking this button to the more recent blog post on the Blog page -->
+                        <button class="button"><a class="button__link" href="blog.html#recent-post">Read more</a></button>
+                </div>
 
-                <p class="blog-preview-section__summary blog-preview-section__summary--top">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error autem repellat delectus at voluptatibus, quasi impedit inventore debitis laborum in, cum iste minima adipisci! Earum adipisci deleniti sed eum corporis.</p>
+                <div class="blog-preview-section__quarter blog-preview-section__quarter--bottom">
+                        <h3 class="blog-preview-section__h3 section__h3">Favourite Things</h3>
+                        
+                        <p class="blog-preview-section__summary blog-preview-section__summary--right">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Error autem repellat delectus at voluptatibus, quasi impedit inventore debitis laborum in, cum
+                            iste minima adipisci! Earum adipisci deleniti sed eum corporis.</p>
+                        
+                        <button class="button"><a href="blog.html" class="button__link">Read more</a></button>
+                </div>
 
-                <!-- Linking this button to the more recent blog post on the Blog page -->
-                <button class="button"><a class="button__link" href="blog.html#recent-post">Read more</a></button>
-            </div>
-
-            <div class="blog-preview-section__img-background blog-preview-section__img-background--right"><img src="assets/home-image-4.jpg" alt="An industrial building with many vents photographed from the side at sunset" class="blog-preview-section__img blog-preview-section__img--right"></div>
-
-            <div class="blog-preview-section__quarter blog-preview-section__quarter--bottom">
-                <h3 class="blog-preview-section__h3">Favourite Things</h3>
-
-                <p class="blog-preview-section__summary blog-preview-section__summary--right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error autem repellat delectus at voluptatibus, quasi impedit inventore debitis laborum in, cum iste minima adipisci! Earum adipisci deleniti sed eum corporis.</p>
-
-                <button class="button"><a href="blog.html" class="button__link" >Read more</a></button>
+                <img src="assets/home-image-4.jpg" alt="An industrial building with many vents photographed from the side at sunset"
+                    class="blog-preview-section__img blog-preview-section__img--bottom">
             </div>
         </section>
 
-        <div class="section journey-section">
-            <div class="journey-section__img-background journey-section__img-background--square">
-                <img class="journey-section__img journey-section__img--square" src="assets/home-image-5.jpg" alt="A brown haired woman with red lipstick smiling">
-            </div>
-
+        <section class="section journey-section">
             <div class="journey-section__wrapper">
-                <h2 class="journey-section__h2 section__h2">Harper's Journey</h2>
+                
+                <img class="journey-section__img" src="assets/home-image-5.jpg" alt="A brown haired woman with red lipstick, smiling">
 
-                <p class="journey-section__para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas quaerat possimus mollitia
-                    maiores quasi ab, iusto sed cum praesentium corporis placeat minima consequuntur, impedit qui neque quae adipisci
-                    fugit totam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, doloribus. Sed tenetur reiciendis,
-                    dolorum quisquam aliquam maiores vitae provident odit veritatis obcaecati molestias impedit distinctio quas iste
-                    cum quaerat! Nulla.</p>
+                <div class="journey-section__wrapper--inner">
+                    <h2 class="journey-section__h2 section__h2">Harper's Journey</h2>
+
+                    <p class="journey-section__para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae repellat autem temporibus repellendus. Nihil ipsa sapiente similique laborum dicta earum animi veniam omnis mollitia sequi quaerat beatae, soluta corrupti assumenda deleniti nulla praesentium? Dolores est dolorum ea facere asperiores molestiae quae. Reiciendis assumenda eligendi excepturi esse! Reprehenderit, aliquam. Eius quis mollitia ut!</p>
 
                     <button class="button"><a href="blog.html" class="button__link">Find out more</a> </button>
+                </div>
             </div>
-        </div>
+        </section>
 
         <div class="section gallery-section">
             <img src="assets/home-image-6.jpg" alt="The corner of a light pink building against a blue sky" class="gallery-section__img">

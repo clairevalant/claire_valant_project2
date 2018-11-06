@@ -1,0 +1,27 @@
+// Harper's Journey section
+
+.journey-section {
+    background: $light-color;
+    height: 60vh;
+    @include flexBox();
+    flex-wrap: wrap;
+
+    &__img {
+        box-shadow: 20px 20px $main-dark;
+        max-width: 280px;
+    }
+
+    &__wrapper {
+        width: 90vw;
+        margin: 110px auto 150px auto;
+        @include flexBox(row, space-around, center);
+        flex-wrap: no-wrap;
+
+        &--inner {
+            @include flexBox (column, space-evenly, flex-start);
+            flex-basis: 60%;
+            align-content: flex-start;
+        }
+
+    }
+}

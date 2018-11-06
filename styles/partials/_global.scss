@@ -30,6 +30,12 @@ img {
     max-width: 100%;
 }
 
+// Size and center all section wrappers
+.section__wrapper {
+    width: 90vw;
+    @include flexBox();
+}
+
 .header, .nav-contain {
     background: $main-color;
 }
@@ -54,13 +60,9 @@ img {
     background: $accent-color;
     border: none;
     padding: 10px 30px;
-}
 
-.section {
-    @include flexBox();
-
-    &__wrapper {
-        width: 90vw;
+    &:hover {
+        background: lighten($accent-color,5);
     }
 }
 

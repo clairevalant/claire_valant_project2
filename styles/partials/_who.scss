@@ -6,7 +6,6 @@
     @include flexBox();
 
     &__wrapper {
-        width: 90vw;
         @include flexBox(row, flex-end, center);
 
         &--inner {
