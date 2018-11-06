@@ -433,7 +433,6 @@ img {
     flex-wrap: wrap; }
 
 .blog-preview-section {
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -448,6 +447,24 @@ img {
   -ms-flex-align: center;
   align-items: center; }
   .blog-preview-section__wrapper {
+    width: 80vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .blog-preview-section--half {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -458,30 +475,68 @@ img {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
+    .blog-preview-section--half--top {
+      margin-bottom: 100px;
+      -webkit-box-align: end;
+      -ms-flex-align: end;
+      align-items: flex-end;
+      position: relative; }
+    .blog-preview-section--half--bottom {
+      position: relative; }
   .blog-preview-section__img {
     max-width: 550px;
-    min-width: 300px;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%; }
     .blog-preview-section__img--top {
-      -webkit-box-shadow: 20px 20px #68b0c1, -100px 20px #68b0c1;
-      box-shadow: 20px 20px #68b0c1, -100px 20px #68b0c1; }
+      -webkit-box-shadow: 20px 20px #68b0c1, -150px 20px #68b0c1;
+      box-shadow: 20px 20px #68b0c1, -150px 20px #68b0c1; }
     .blog-preview-section__img--bottom {
-      -webkit-box-shadow: 20px 20px #b9dde7, 100px 20px #b9dde7;
-      box-shadow: 20px 20px #b9dde7, 100px 20px #b9dde7; }
+      position: absolute;
+      right: 0;
+      bottom: -25px;
+      -webkit-box-shadow: 20px 20px #b9dde7, 150px 20px #b9dde7;
+      box-shadow: 20px 20px #b9dde7, 150px 20px #b9dde7; }
   .blog-preview-section__quarter {
+    height: 100%;
     -ms-flex-preferred-size: 40%;
     flex-basis: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     min-width: 400px; }
+    .blog-preview-section__quarter--bottom {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      -webkit-box-align: end;
+      -ms-flex-align: end;
+      align-items: flex-end;
+      text-align: right; }
 
 .journey-section {
   background: #f6f6f6;
-  height: 60vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -503,7 +558,7 @@ img {
     max-width: 280px; }
   .journey-section__wrapper {
     width: 90vw;
-    margin: 110px auto 150px auto;
+    margin: 110px auto 100px auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -526,9 +581,9 @@ img {
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column;
-      -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-      justify-content: space-evenly;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
       -webkit-box-align: start;
       -ms-flex-align: start;
       align-items: flex-start;
@@ -554,7 +609,8 @@ img {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
   .gallery-section__img {
-    max-width: 450px; }
+    margin: 100px 20px;
+    max-width: calc(30% - 30px); }
 
 .mini-header {
   position: relative;

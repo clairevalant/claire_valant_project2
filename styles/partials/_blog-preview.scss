@@ -2,33 +2,63 @@
 // 2x2 centre section of site previewing blog posts
 
 .blog-preview-section {
-    height: 100vh;
+    // height: 100vh;
     @include flexBox();
 
     &__wrapper {
-        @include flexBox(row, space-between, center);
+        width: 80vw;
+        @include flexBox(column,center, center);
         flex-wrap: wrap;
     }
 
+    &--half {
+            width: 100%;
+            @include flexBox(row, space-between, flex-start);
+            flex-wrap: wrap;
+
+            &--top {
+                margin-bottom: 100px;
+                align-items: flex-end;
+                position: relative;
+            }
+
+            &--bottom {
+                position: relative;
+            }
+        }
+
     &__img {
         max-width: 550px;
-        min-width: 300px;
-        flex-basis:50%;
+        // min-width: 300px;
+        flex-basis: 50%;
 
         // Using layered box shadows to create a coloured background for blog preview images
         &--top {
+            // position: absolute;
+            // left:0;
+            // top: -50px;
             box-shadow: 20px 20px $main-darker, 
-                        -100px 20px $main-darker;
+                        -150px 20px $main-darker;
         }
 
         &--bottom {
+            position: absolute;
+            right:0;
+            bottom: -25px;
             box-shadow: 20px 20px $main-color,
-                        100px 20px $main-color;
+                        150px 20px $main-color;
         }
     }
 
     &__quarter {
+        height: 100%;
         flex-basis: 40%;
+        @include flexBox(column, flex-end, flex-start);
         min-width: 400px;
+
+        &--bottom {
+            @include flexBox(column, flex-start, flex-end);
+            text-align: right;
+        }
     }
 }

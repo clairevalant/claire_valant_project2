@@ -5,6 +5,7 @@
     flex-wrap: wrap;
 
     &__img {
-        max-width: 450px;
+        margin: 100px 20px;
+        max-width: calc(30% - 30px);
     }
 }

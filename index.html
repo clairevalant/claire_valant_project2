@@ -93,34 +93,43 @@
         </section>
 
         <section class="section blog-preview-section">
-            <div class="section__wrapper">
+            <div class="section__wrapper blog-preview-section__wrapper">
                 
-                <img src="assets/home-image-3.jpg" alt="Two people surfing, silouhetted against a pink sunset" class="blog-preview-section__img blog-preview-section__img--top">
+                <!-- wrapper for top half of section -->
+                <div class="blog-preview-section--half blog-preview-section--half--top">
 
-                <!-- Wrapper for blog preview heading & paragraph -->
-                <div class="blog-preview-section__quarter blog-preview-section__quarter--top">
-                        <h3 class="blog-preview-section__h3 section__h3">Harper's Travels</h3>
-                        
-                        <p class="blog-preview-section__summary blog-preview-section__summary--top">Lorem ipsum dolor sit amet consectetur
+                    <img src="assets/home-image-3.jpg" alt="Two people surfing, silouhetted against a pink sunset" class="blog-preview-section__img blog-preview-section__img--top">
+
+                    <!-- Wrapper for quarter of section -->
+                    <div class="blog-preview-section__quarter blog-preview-section__quarter--top">
+
+                            <h3 class="blog-preview-section__h3 section__h3">Harper's Travels</h3>
+                            
+                            <p class="blog-preview-section__summary blog-preview-section__summary--top">Lorem ipsum dolor sit amet consectetur
                             adipisicing elit. Error autem repellat delectus at voluptatibus, quasi impedit inventore debitis laborum in, cum
                             iste minima adipisci! Earum adipisci deleniti sed eum corporis.</p>
-                        
-                        <!-- Linking this button to the more recent blog post on the Blog page -->
-                        <button class="button"><a class="button__link" href="blog.html#recent-post">Read more</a></button>
+                            
+                            <!-- Linking this button to the more recent blog post on the Blog page -->
+                            <button class="button"><a class="button__link" href="blog.html#recent-post">Read more</a></button>
+                    </div>
                 </div>
 
-                <div class="blog-preview-section__quarter blog-preview-section__quarter--bottom">
-                        <h3 class="blog-preview-section__h3 section__h3">Favourite Things</h3>
-                        
-                        <p class="blog-preview-section__summary blog-preview-section__summary--right">Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Error autem repellat delectus at voluptatibus, quasi impedit inventore debitis laborum in, cum
-                            iste minima adipisci! Earum adipisci deleniti sed eum corporis.</p>
-                        
-                        <button class="button"><a href="blog.html" class="button__link">Read more</a></button>
-                </div>
+                <div class="blog-preview-section--half blog-preview-section--half--bottom">
 
-                <img src="assets/home-image-4.jpg" alt="An industrial building with many vents photographed from the side at sunset"
-                    class="blog-preview-section__img blog-preview-section__img--bottom">
+                    <div class="blog-preview-section__quarter blog-preview-section__quarter--bottom">
+
+                            <h3 class="blog-preview-section__h3 section__h3">Favourite Things</h3>
+                            
+                            <p class="blog-preview-section__summary blog-preview-section__summary--right">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Error autem repellat delectus at voluptatibus, quasi impedit inventore debitis laborum in, cum
+                                iste minima adipisci! Earum adipisci deleniti sed eum corporis.</p>
+                            
+                            <button class="button"><a href="blog.html" class="button__link">Read more</a></button>
+                    </div>
+
+                    <img src="assets/home-image-4.jpg" alt="An industrial building with many vents photographed from the side at sunset"
+                        class="blog-preview-section__img blog-preview-section__img--bottom">
+                </div>
             </div>
         </section>
 
@@ -140,9 +149,14 @@
         </section>
 
         <div class="section gallery-section">
-            <img src="assets/home-image-6.jpg" alt="The corner of a light pink building against a blue sky" class="gallery-section__img">
-            <img src="assets/home-image-7.jpg" alt="A plane flying through bkue and pink clouds" class="gallery-section__img">
-            <img src="assets/home-image-8.jpg" alt="Pink and blue cotton candy-looking clouds" class="gallery-section__img">
+            <div class="section__wrapper">
+
+                <img src="assets/home-image-6.jpg" alt="The corner of a light pink building against a blue sky" class="gallery-section__img">
+
+                <img src="assets/home-image-7.jpg" alt="A plane flying through bkue and pink clouds" class="gallery-section__img">
+                
+                <img src="assets/home-image-8.jpg" alt="Pink and blue cotton candy-looking clouds" class="gallery-section__img">
+            </div>
         </div>
 
     </main>

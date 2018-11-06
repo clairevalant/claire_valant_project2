@@ -2,7 +2,7 @@
 
 .journey-section {
     background: $light-color;
-    height: 60vh;
+    // height: 60vh;
     @include flexBox();
     flex-wrap: wrap;
 
@@ -13,12 +13,12 @@
 
     &__wrapper {
         width: 90vw;
-        margin: 110px auto 150px auto;
+        margin: 110px auto 100px auto;
         @include flexBox(row, space-around, center);
         flex-wrap: no-wrap;
 
         &--inner {
-            @include flexBox (column, space-evenly, flex-start);
+            @include flexBox (column, space-between, flex-start);
             flex-basis: 60%;
             align-content: flex-start;
         }
