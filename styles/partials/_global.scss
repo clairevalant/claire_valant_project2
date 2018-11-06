@@ -9,7 +9,7 @@ $light-color: #f6f6f6;
 $title-font: 'Oswald', sans-serif;
 $body-font: 'Cabin', sans-serif;
 
-// Global styles
+// Global styles (found throughout the markup)
 
 html {
     font-size: 62.5%;
@@ -62,4 +62,10 @@ img {
     &__wrapper {
         width: 90vw;
     }
+}
+
+.footer {
+    background: $dark-color;
+    text-align: center;
+    color: $light-color;
 }

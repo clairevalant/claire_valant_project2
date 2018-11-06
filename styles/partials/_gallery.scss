@@ -1,0 +1,10 @@
+// Gallery of three images on homepage
+
+.gallery-section {
+    @include flexBox();
+    flex-wrap: wrap;
+
+    &__img {
+        max-width: 450px;
+    }
+}

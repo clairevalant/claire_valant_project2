@@ -1,0 +1,29 @@
+// Styling mini-headers
+
+.mini-header {
+    position: relative;
+    height: 500px;
+
+    &__img {
+        height: 100%;
+        display: block;
+    }  
+
+    &__title {
+        font-size: 80px;
+        line-height: 92px;
+        position: absolute;
+        bottom: -40px;
+        left: 150px;
+    }
+
+    &--blog {
+        background-image: url("/assets/blog-image-1.jpg");
+        @include bgCenter();
+    }
+
+    &--contact {
+        background-image: url("/assets/contact-image-1.jpg");
+        @include bgCenter();
+    }
+}

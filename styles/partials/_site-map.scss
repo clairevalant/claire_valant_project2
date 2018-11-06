@@ -21,6 +21,7 @@
 
     &__wrapper {
         width:90vw;
+        margin: 110px auto 150px auto;
         @include flexBox();
         flex-wrap: wrap;
     }

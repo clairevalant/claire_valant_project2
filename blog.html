@@ -24,11 +24,37 @@
         </nav>
     </div>
 
-    <header class="mini-header">
+    <header class="mini-header mini-header--blog">
         <h1 class="mini-header__title">Blog</h1>
     </header>
 
     <main>
+        <aside class="aside blog-aside">
+            <section class="blog-aside__section blog-aside__section-about">
+                <div class="blog-aside__wrapper">
+                    <img src="assets/blog-image-2.jpg" alt="A brown haired woman in a pink faux fur coat lyring on the floor  next to a teal wall"
+                        class="blog-aside__img">
+        
+                    <h3 class="blog-aside__h3 section__h3">About Harper</h3>
+        
+                    <p class="section__para">Velit cupiditate nulla commodi ducimus vel minima mollitia officiis nesciunt quod
+                        voluptate dolore magnam, earum veniam similique ad. Amet voluptate libero fugit.</p>
+                </div>
+            </section>
+        
+            <section class="blog-aside__section blog-aside__section-recent">
+                <div class="blog-aside__wrapper">
+                    <h3 class="blog-aside__h3 section__h3">Recent Posts</h3>
+                    <ul>
+                        <li>Donec facilisis tortor ut</li>
+                        <li>Augue lacinia at viverra</li>
+                        <li>Semper sed sapien metus</li>
+                        <li>Scelerisque nec pharetra id</li>
+                    </ul>
+                </div>
+            </section>
+        </aside>
+
         <section class="section section">
             <div class="section__post--featured">
                 <h4 class="section__post__h4">My Favourite Travel Destinations</h4>
@@ -78,36 +104,12 @@
         <form action="" class="form">
             <input type="name" name="name" placeholder="Name" class="form__input">
             <input type="email" name="email" placeholder="Email address" class="form__input">
-            <!-- <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea> -->
-            <input type="text" placeholder="Comment" class="form__text-box">
+            <textarea class="form__text-box" placeholder="Comment" name="Comment box" id="" cols="30" rows="10"></textarea>
             <input type="submit" value="Comment" class="button button__link button--form">
+            
         </form>
 
     </main>
-
-    <aside class="aside blog-aside">
-        <section class="blog-aside__section blog-aside__section-about">
-            <div class="blog-aside__wrapper">
-                <img src="assets/blog-image-2.jpg" alt="A brown haired woman in a pink faux fur coat lyring on the floor  next to a teal wall" class="blog-aside__img">
-
-                <h3 class="blog-aside__h3 section__h3">About Harper</h3>
-
-                <p class="section__para">Velit cupiditate nulla commodi ducimus vel minima mollitia officiis nesciunt quod voluptate dolore magnam, earum veniam similique ad. Amet voluptate libero fugit.</p>
-            </div>
-        </section>
-
-        <section class="blog-aside__section blog-aside__section-recent">
-            <div class="blog-aside__wrapper">
-                <h3 class="blog-aside__h3 section__h3">Recent Posts</h3>
-                <ul>
-                    <li>Donec facilisis tortor ut</li>
-                    <li>Augue lacinia at viverra</li>
-                    <li>Semper sed sapien metus</li>
-                    <li>Scelerisque nec pharetra id</li>
-                </ul>
-            </div>
-        </section>
-    </aside>
 
     <footer class="footer">
         <span class="footer__span">Copyright &copy; 2018 HackerYou</span>
