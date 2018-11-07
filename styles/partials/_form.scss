@@ -1,7 +1,7 @@
 // Form styles
 
 .form {
-    flex-grow: 2;
+    width:100%;
     @include flexBox(column, center,stretch);
 
     &__input {

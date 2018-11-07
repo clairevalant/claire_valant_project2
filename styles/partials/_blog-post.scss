@@ -2,21 +2,23 @@
 
 
 .section{
+
+    &__h4 {
+        font-size: 3rem;
+    }
+
     &__blog {
+        @include flexBox(column, flex-start,flex-start);
         flex-grow: 2;
     }
 
     &__post {
-    background: white;
+        background: white;
+        margin-bottom: 30px;
 
-    &-wrapper {
-        @include flexBox(column, center, flex-start);
-        margin: 30px;
+        &-wrapper {
+            @include flexBox(column, center, flex-start);
+            margin: 30px;
+        }
     }
-
-    &--featured {
-        height:100%;
-    }
-}
-
 }
