@@ -61,6 +61,7 @@ img {
     @include flexBox();
 }
 
+// Similar basic font styling for many headings
 .nav-contain,
 .header,
 .header__wrapper__title,
@@ -86,6 +87,10 @@ img {
 
     &:hover {
         background: lighten($accent-color,5);
+    }
+
+    &--form {
+        margin-top: 30px;
     }
 }
 
