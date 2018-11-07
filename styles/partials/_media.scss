@@ -1,0 +1,135 @@
+// Media queries for Harper
+
+@media only screen and (max-width: 1230px){
+    .header {
+        &__wrapper__title {
+            color: white;
+            top:70%;
+            right:75px;
+        }
+
+        &__wrapper__decoration {
+            top:62%;
+            right:35px;
+        }
+
+        &__image {
+            top:3vh;
+            box-shadow: 20px 20px $main-dark;
+        }
+    }
+
+    .blog-preview-section__wrapper {
+        width: 95vw;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .blog-preview-section {
+
+        &--half {
+            flex-basis: 55%;
+            margin: 0;
+            @include flexBox(row, center, center);
+
+            &--top {
+                background: $main-color;
+            }
+        }
+
+        &__img {
+            flex-basis: 40%;
+
+            &--top {
+                margin-right: 30px;
+                box-shadow: -20px 20px $main-darker, 
+                            -150px 20px $main-darker;
+            }
+
+            &--bottom {
+                margin-left: 30px;
+                box-shadow: 20px 20px $main-dark,
+                            150px 20px $main-dark;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 975px) {
+    .journey-section__img {
+        box-shadow: -20px 20px $main-dark;
+    }
+
+    .gallery-section {
+
+        &__wrapper {
+            width:100vw;
+        }
+
+        &__img {
+            margin: 0;
+            width:50%;
+            max-width:50%;
+        }
+
+        &__img--gone {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .blog-preview-section--half,
+    .blog-preview-section__quarter {
+        @include flexBox(column, center, center);
+        text-align: center;
+    }
+
+    .blog-preview-section {
+        height:1000px;
+
+        &__img--top {
+            box-shadow: none;
+            margin-top:30px;
+        }
+
+        &__img--bottom {
+            display: none;
+         }
+    }
+
+    .journey-section {
+        &__wrapper {
+            @include flexBox(column,center,center);
+
+            &--inner {
+                margin-top:30px;
+            }
+        }
+        &__img {
+            box-shadow: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .header {
+        background-image: url("/assets/home-image-1.jpg");
+        @include bgCenter();
+
+        &__wrapper__title {
+            font-size: 10rem;
+            text-align: center;
+            top:60%;
+        }
+
+        &__wrapper__decoration {
+            display: none;
+        }
+
+        &__image {
+            display: none;
+        }
+    }
+
+}
