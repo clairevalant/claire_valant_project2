@@ -34,10 +34,31 @@ img {
 .section__wrapper {
     width: 90vw;
     @include flexBox();
+    
+    &--secondary-page {
+        width: 80vw;
+        padding: 100px 0;
+        @include flexBox(row, space-between, flex-start);
+    }
 }
 
-.header, .nav-contain {
+.aside {
+    background: white;
+}
+
+.header,
+.nav-contain {
     background: $main-color;
+}
+
+// every section or page that has the same background colour
+.main--blog,
+.main--contact,
+.who-section,
+.journey-section,
+.site-map-section {
+    background: $light-color;
+    @include flexBox();
 }
 
 .nav-contain,
@@ -60,6 +81,7 @@ img {
     background: $accent-color;
     border: none;
     padding: 10px 30px;
+    transition: background 0.3s;
 
     &:hover {
         background: lighten($accent-color,5);

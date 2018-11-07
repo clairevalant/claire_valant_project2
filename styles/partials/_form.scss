@@ -1,0 +1,33 @@
+// Form styles
+
+.form {
+    flex-basis: 67%;
+    @include flexBox(column, center,stretch);
+
+    &__input {
+        padding: 25px;
+        border: none;
+        width: calc(50% - 7.5px);
+
+        &::placeholder {
+            color: $dark-color;
+            opacity: 1;
+            font-size: 16px;
+        }
+
+        &-last {
+            margin-left: 15px;
+        }
+
+        &--text-area {
+            width:100%;
+            margin-top: 20px;
+        }
+    }
+
+    &__group-inputs {
+        @include flexBox(row, stretch, stretch);
+        flex-wrap: wrap;
+        // min-width: 
+    }
+}

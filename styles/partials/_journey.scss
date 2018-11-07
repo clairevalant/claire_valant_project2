@@ -1,8 +1,6 @@
 // Harper's Journey section
 
 .journey-section {
-    background: $light-color;
-    // height: 60vh;
     @include flexBox();
     flex-wrap: wrap;
 
