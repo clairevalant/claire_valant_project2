@@ -1,6 +1,5 @@
 // Styles for the blog posts (form in separate partial)
 
-
 .section{
 
     &__h4 {
@@ -15,10 +14,22 @@
     &__post {
         background: white;
         margin-bottom: 30px;
+        border-bottom: 5px solid $accent-color;
 
+        // trying to align the blog posts with images in a row
         &-wrapper {
-            @include flexBox(column, center, flex-start);
+            // 
+            @include flexBox(column, flex-start, flex-start);
             margin: 30px;
+
+            &--with-image {
+                @include flexBox(row, space-between, flex-start);
+            }
+
+            &__text {
+                // for the date and blog preview of older blog posts
+                @include flexBox(column, flex-start, flex-start);
+            }
         }
     }
 }

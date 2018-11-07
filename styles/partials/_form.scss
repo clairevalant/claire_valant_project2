@@ -27,7 +27,6 @@
 
     &__group-inputs {
         @include flexBox(row, stretch, stretch);
-        flex-wrap: wrap;
-        // min-width: 
+        flex-wrap: wrap; 
     }
 }

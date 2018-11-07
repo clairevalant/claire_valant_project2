@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css?family=Cabin|Oswald:700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
         crossorigin="anonymous">
@@ -15,6 +16,7 @@
     <!-- This nav will stay outside of the Home header because it is present on every page & sticky, and in a container with which to use flexbox-->
     <div class="nav-contain">
         <a class="nav-contain__logo-link" href="index.html">Harper</a>
+        <i class="nav-contain__hamburger fas fa-bars"></i>
         <nav class="nav">
             <ul class="nav__list">
                 <li class="nav__item"><a class="nav__link nav__link--current-page" href="index.html">Home</a></li>
@@ -150,9 +152,9 @@
         <div class="section gallery-section">
             <div class="section__wrapper gallery-section__wrapper">
 
-                <img src="assets/home-image-6.jpg" alt="The corner of a light pink building against a blue sky" class="gallery-section__img">
+                <img src="assets/home-image-6.jpg" alt="The corner of a light pink building against a blue sky" class="gallery-section__img gallery-section__img--gone-last">
 
-                <img src="assets/home-image-7.jpg" alt="A plane flying through bkue and pink clouds" class="gallery-section__img gallery-section__img--gone">
+                <img src="assets/home-image-7.jpg" alt="A plane flying through bkue and pink clouds" class="gallery-section__img gallery-section__img--gone-first">
                 
                 <img src="assets/home-image-8.jpg" alt="Pink and blue cotton candy-looking clouds" class="gallery-section__img">
             </div>
