@@ -31,8 +31,11 @@
     <main class="main--blog">
         <div class="section__wrapper section__wrapper--secondary-page">
             <aside class="aside blog-aside">
-                <section class="blog-aside__section blog-aside__section-about">
-                    <div class="blog-aside__wrapper">
+
+                <section class="aside__section">
+
+                    <div class="aside__wrapper">
+
                         <img src="assets/blog-image-2.jpg" alt="A brown haired woman in a pink faux fur coat lyring on the floor  next to a teal wall"
                             class="blog-aside__img">
             
@@ -43,9 +46,12 @@
                     </div>
                 </section>
             
-                <section class="blog-aside__section blog-aside__section-recent">
-                    <div class="blog-aside__wrapper">
+                <section class="aside__section">
+
+                    <div class="aside__wrapper">
+
                         <h3 class="blog-aside__h3 section__h3">Recent Posts</h3>
+
                         <ul>
                             <li>Donec facilisis tortor ut</li>
                             <li>Augue lacinia at viverra</li>
@@ -103,10 +109,15 @@
             </section>
 
             <form action="" class="form">
-                <input type="name" name="name" placeholder="Name" class="form__input">
-                <input type="email" name="email" placeholder="Email address" class="form__input">
-                <textarea class="form__text-box" placeholder="Comment" name="Comment box" id="" cols="30" rows="10"></textarea>
-                <input type="submit" value="Comment" class="button button__link button--form">
+            
+                <div class="form__group-inputs">
+                    <input type="name" name="name" placeholder="Name" class="form__input">
+                    <input type="email" name="email" placeholder="Email address" class="form__input form__input-last">
+                </div>
+            
+                <textarea class="form__input form__input--text-area" placeholder="Message" name="Comment box" id="" cols="30" rows="10"></textarea>
+            
+                <input type="submit" value="Submit" class="button button__link button--form">
             </form>
         </div>
     </main>

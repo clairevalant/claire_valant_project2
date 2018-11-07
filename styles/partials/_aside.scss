@@ -11,21 +11,30 @@
     }
 
     &__item {
-        color: $main-dark;
-        margin: 0;
+
+        &--social {
+            color: $main-dark;
+            margin: 0;
+        }
     }
 
     &__link {
-        font-size: 2rem;
-        
+        font-size: 3rem;
+        transition: color 0.3s;
+
          &:hover {
-            color:$main-dark;
-            background: transparentize(white, 0.3)
+            color:$main-darker;
         }
     }
 
     &__email {
-        font-family: $title-font;
+        text-transform: none;
+        font-size: 2.5rem;
+        margin: 20px 0;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
     &__address {
